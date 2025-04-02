@@ -1,4 +1,5 @@
-// nuxt.config.ts
+import vuetify from 'vite-plugin-vuetify';
+
 export default defineNuxtConfig({
   css: ['vuetify/lib/styles/main.css'],
 
@@ -12,17 +13,20 @@ export default defineNuxtConfig({
     },
     ssr: {
       noExternal: ['vuetify']
-    }
+    },
+    plugins: [
+      vuetify({
+        styles: { configFile: 'assets/vuetify-settings.scss' } // 必要に応じて設定ファイルを指定
+      })
+    ]
   },
 
-  // GitHub Pages用の設定
   app: {
     baseURL: '/nuxt-app/' // リポジトリ名に合わせて変更
   },
 
   nitro: {
     preset: 'github-pages',
-    // CSSファイルの処理に関する問題を解決
     esbuild: {
       options: {
         loaders: {
@@ -33,4 +37,4 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-04-03'
-})
+});
