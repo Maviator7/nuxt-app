@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   modules: ['vuetify-nuxt-module'],
   app: {
     baseURL: '/nuxt-app/', // リポジトリ名に合わせて変更
-    cdnURL: '/nuxt-app/'
   },
   nitro: {
     preset: 'github-pages' // GitHub Pages用のプリセット
