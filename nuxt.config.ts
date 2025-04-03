@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['vuetify-nuxt-module'],
   app: {
-    baseURL: '/nuxt-app/' // リポジトリ名に合わせて変更
+    baseURL: '/nuxt-app/', // リポジトリ名に合わせて変更
+    cdnURL: '/nuxt-app/'
   },
   nitro: {
     preset: 'github-pages' // GitHub Pages用のプリセット
