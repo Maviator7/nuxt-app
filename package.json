@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "postgenerate": "mkdir -p .output/public && echo > .output/public/.nojekyll"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.3.0",
