@@ -9,7 +9,7 @@
 
 <template>
   <div>
-    <v-toolbar title="ヘッダー">
+    <v-toolbar title="Maviator7 Page">
       <v-btn icon="mdi-magnify"></v-btn>
       <v-menu>
         <template v-slot:activator="{ props }">
